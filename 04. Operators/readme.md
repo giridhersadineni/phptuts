@@ -5,7 +5,6 @@
 |Operation|Name|Description|
 |---|---|---|
 |-$a	|Negation	|Opposite of $a.|
-
 | $a + $b	|Addition	|Sum of $a and $b.|
 |$a - $b	|Subtraction	|Difference of $a and $b|
 |$a * $b|	Multiplication	|Product of $a and $b.|
