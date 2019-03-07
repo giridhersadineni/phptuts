@@ -1,4 +1,14 @@
-<?php ?>
+<?php
+    if(isset($_POST['submit'])){
+        $uname=$_POST['uname'];
+        $pwd=$_POST['pwd'];
+        if($uname == 123456 && $pwd == 78910){
+            echo "Login Successfully";
+        }else{
+            echo"Login Fail, try again";
+        }
+    }
+    ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -59,7 +69,7 @@
     </style>
   </head>
   <body>
-    <form action="">
+    <form action="" method="POST">
         <h1>Login Form</h1>
         <div class="formcontainer">
         <hr>
@@ -68,7 +78,7 @@
                 <input type="text" name="uname" placeholder="Enter Username" required/>
                 <label for="pwd"><strong>Password</strong></label>
                 <input type="text" name="pwd" placeholder="Enter Password" required/>
-                <button type="submit">Login</button>
+                <button type="submit" value="submit" name="submit">Login</button>
                 <div class="container" style="background-color: #eee">
                 <label style="padding-left:15px">
                     <input type="checkbox" checked="checked" name="rememberme"/>Remember Me
@@ -78,5 +88,6 @@
         </div>
         </div>
     </form>
+    
   </body>
 </html>
