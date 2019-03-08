@@ -1,7 +1,7 @@
 # PHP Operators Class
 
 
-## Arithmatic Operators
+## Arithmetic Operators
 |Operation|Name|Description|
 |---|---|---|
 |-$a	|Negation	|Opposite of $a.|
@@ -29,4 +29,4 @@ $a >> $b	Shift right	Shift the bits of $a $b steps to the right (each step means
 
 
 # References Links
-['Assignment Operator Reference'](http://php.net/manual/en/language.operators.assignment.php)
+[Assignment Operators Reference](http://php.net/manual/en/language.operators.assignment.php)
