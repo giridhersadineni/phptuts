@@ -21,9 +21,7 @@
                     if(isset($_POST['submit'])){
                         $users=array("giridher","suresh","bhavani","deepthi","swathi","shravani");
                         $passwords=array("admin","admin","admin","admin","admin","admin"); 
-                      echo $users[5]; 
-                      $username="shravani";
-                      $password="admin";    
+                        
                     //    fors($users=0;$users<=5;$users++){
                     //  echo $users;
                        // $orders='shravani';
