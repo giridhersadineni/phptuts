@@ -1,6 +1,3 @@
-<?php print_r($_POST);
-if(isset($_POST['action']))
-?>
 <?php
     echo "Request Received";
     include "includes/config.php";
@@ -10,23 +7,23 @@ if(isset($_POST['action']))
                 die("Connection Error".$conn->connect_error);
             }
             else{
-                if(isset($_POST['submit'])){
-                $catname=$_POST['newcatname'];
-                $description=$_POST['newdescription'];
+                $catname=$_POST['catname'];
+                $description=$_POST['description'];
                 $id=$_POST['CATID'];
-                $updatecat= "UPDATE category SET 
-                        CAT_NAME ='$newcatname',
-                        DESCRIPTION ='$newdescription',
-                        where CAT_ID = '$id'
+                $updatecategory= "UPDATE category SET 
+                        CAT_NAME ='$catname',
+                        DESCRIPTION = '$description'
+                        where CAT_ID = $id
                         "
                         ;
-                echo  $updatecat;           
+                        
+                echo  $updatecategory;           
                 //echo $sql;
-                if($conn->query($updatecat)===TRUE){
+                if($conn->query($updatecategory)===TRUE){
                     
                    header("Location:cattable.php");
                 
-                }
+                
             }
                 else{
                 echo "Error" .$conn->connect_error;
